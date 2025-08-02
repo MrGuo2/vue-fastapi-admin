@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  # 'webapp:' 是我们给这个服务起的“代号”，详细解释见下方
+  webapp:
+    build: .
+    ports:
+      - "80:9999"
+    volumes:
+      # 这是关键！用来处理你的 data 目录 (详细解释见下方！)
+      - /data/logs:/data/logs
+    restart: always

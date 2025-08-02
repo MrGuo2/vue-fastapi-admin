@@ -1,0 +1,18 @@
+[project]
+name = "module-jsas"
+version = "0.1.0"
+description = "First code"
+requires-python = ">=3.11"
+
+dependencies = [
+    "aerich>=0.9.1",
+    "argon2-cffi>=25.1.0",
+    "fastapi==0.111.0",
+    "jwt>=1.4.0",
+    "loguru>=0.7.3",
+    "passlib>=1.7.4",
+    "pydantic-settings>=2.10.1",
+    "setuptools>=80.9.0",
+    "tortoise>=0.1.1",
+    "tortoise-orm>=0.25.1",
+]
